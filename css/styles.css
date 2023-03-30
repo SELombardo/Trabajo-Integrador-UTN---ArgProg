@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.contactSection, .comentSection{
+    padding: 5vh 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10vh;
+}
+.contactForm, .comentForm{
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    width: 60%;
+}
+.comentForm .inputContainer{
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+}
+.comentForm .inputContainer input{
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid black;
+
+}
+.submitBtn{
+    padding: 10px;
+    width: 200px;
+    background-color: black;
+    color: white;
+    border: 1px black solid;
+    border-radius: 5px;
+}
+.submitBtn:hover{
+    transition: 1s ease-in-out;
+    background-color: rgb(107, 195, 107);
+    color: black;
+    border: 1px black solid;
+    font-weight: bold; 
+}
+.coment{
+    height: 20vh;
+}
+.cardOpinion{
+    display: flex;
+    align-items: center;
+    margin: 2vh;
+}
+.cardImg{
+    width: 10vw;
+    height: 20vh;
+    flex: 0 0 auto;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+.cardOpinion div {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 10px 0px;
+    padding: 20px;
+    width: 40vw;
+    border: 1px black solid;
+    border-radius: 5px;
+}
+.opiniones{
+    display: flex;
+    flex-direction: column;
+}

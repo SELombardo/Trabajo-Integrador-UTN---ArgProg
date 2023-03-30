@@ -16,7 +16,43 @@
         <nav></nav>
     </header>
     <!-- MAIN -->
-    <main></main>
+    <main>
+        <!-- SECCION COMENTARIOS -->
+
+        <section class="comentSection">
+            <h2>La familia Acroyogui anda diciendo...</h2>
+            <form class="comentForm">
+                <div class="inputContainer">
+                    <label for="nombre">Ingrese su nombre</label>
+                    <input type="text" name="nombre" placeholder="nombre" id="nombre" required>
+                </div>
+                <div class="inputContainer">
+                    <label for="coment">Tu opinion nos interesa</label>
+                    <textarea id="coment" name="coment" class="coment" placeholder="Añade tu comentario..." required></textarea>
+                </div>
+                <input type="submit" value="Enviar" class="submitBtn">
+            </form>
+            <div class="opiniones">
+                <!-- CONTENEDOR DE OPINIONES -->
+                <div class="comentContainer"></div>
+                <!-- OPINIONES POR DEFAULT -->
+                <div class="cardOpinion">
+                    <img class="cardImg" src="https://static.vecteezy.com/system/resources/previews/007/226/475/non_2x/user-account-circle-glyph-color-icon-user-profile-picture-userpic-silhouette-symbol-on-white-background-with-no-outline-negative-space-illustration-vector.jpg">
+                    <div>                    
+                        <h3>Mercedes Reppucci:</h3>
+                        <p>"Desde que comencé acroyoga, en lo físico, mejoré mi elongación, adquirí fuerza en los brazos y en los abdominales. Logré tomar conciencia de mi respiración y concentrarme en la postura de mi cuerpo. El mayor cambio que experimenté fue mental, ya que las clases me brindaron confianza en mis propias habilidades y en los otros como sostén, guía y acompañamiento."</p>
+                    </div>
+                </div>
+                <div class="cardOpinion">
+                    <img class="cardImg" src="https://static.vecteezy.com/system/resources/previews/007/226/475/non_2x/user-account-circle-glyph-color-icon-user-profile-picture-userpic-silhouette-symbol-on-white-background-with-no-outline-negative-space-illustration-vector.jpg">
+                    <div>                    
+                        <h3>Azul Villar:</h3>
+                        <p>"Este ejercicio me ayudó a conocer mejor mi cuerpo y sus respuestas frente a diferentes estímulos. Ahora puedo disfrutarme más, aprendí a sanarme y a quererme. Desde este lugar siento que puedo ser más empática con la consciencia corporal de les demás."</p>
+                    </div>
+            </div>
+        </div>
+        </section>
+    </main>
     <!-- FOOTER -->
     <footer></footer>
     <script src="./js/script.js"></script>
