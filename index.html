@@ -16,11 +16,39 @@
         <nav></nav>
     </header>
     <!-- MAIN -->
-    <main></main>
+    <main>
+        <!-- FORMULARIO DE CONTACTO -->
+        <section class="contactSection">
+            <form class="contactForm">
+                <h2 id="form-title">Contactá con nosotros</h2>
+                <div class="inputContainer">
+                    <label for="nombre">Ingrese su nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="nombre" required >
+                </div>
+                <div class="inputContainer">
+                    <label for="apellido">Ingrese su apellido</label>
+                    <input type="text" id="apellido" name="apellido" placeholder="apellido" required>
+                </div>    
+                <div class="inputContainer">
+                    <label for="email">Ingrese su correo electrónico</label>
+                    <input type="email" id="email" name="email" required placeholder="ejemplo@gmail.com">
+                </div> 
+                <div class="inputContainer">
+                    <label for="telefono">Ingrese su número telefónico</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="000-0000-0000">
+                </div>
+                <div class="inputContainer">
+                    <label for="coment">Seccion de comentarios:</label>
+                    <textarea id="coment" name="coment" class="coment" placeholder="Introduce tu comentario..."></textarea>
+                </div>
+                <input type="submit" class="submitBtn">
+            </form>
+        </section>
+    </main>
     <!-- FOOTER -->
     <footer></footer>
+    <script src="./js/script.js"></script>
 </body>
 
-<script src="./js/script.js"></script>
 
 </html>
