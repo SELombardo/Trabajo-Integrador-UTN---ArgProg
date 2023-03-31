@@ -50,35 +50,3 @@
 .coment{
     height: 20vh;
 }
-
-/* TARJETAS DE OPINION */
-.opiniones{
-    display: flex;
-    flex-direction: column/* -reverse */;
-}
-    .cardOpinion{
-        display: flex;
-        align-items: center;
-        margin: 2vh;
-    }
-        .cardImg{
-            width: 10vw;
-            height: 20vh;
-            flex: 0 0 auto;
-            margin-right: 20px;
-            border-radius: 50%;
-        }
-        .cardOpinion div {
-            display: flex;
-            flex-direction: column ;
-            justify-content: left;
-            gap: 10px 0px;
-            padding: 20px;
-            width: 40vw;
-            border: 1px black solid;
-            border-radius: 5px;
-        }
-    .comentContainer{
-        display: flex;
-        flex-direction: column-reverse;
-    }
