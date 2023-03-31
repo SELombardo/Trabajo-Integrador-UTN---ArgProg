@@ -1,3 +1,4 @@
+/* SECCIÓN COMENTARIOS */
 const comentArr = []
 
 const comentForm = document.querySelector(".comentForm")
