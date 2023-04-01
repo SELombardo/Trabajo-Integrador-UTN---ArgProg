@@ -53,7 +53,7 @@
 /* TARJETAS DE OPINION */
 .opiniones{
     display: flex;
-    flex-direction: column/* -reverse */;
+    flex-direction: column;
 }
 .cardOpinion{
     display: flex;
@@ -80,4 +80,43 @@
 .comentContainer{
     display: flex;
     flex-direction: column-reverse;
+}
+
+/* TARJETAS DE PRODUCTO */
+.productSection{
+    padding: 5vh 0vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10vh;
+}
+.productContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.productCard{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgb(154, 222, 167);
+    padding: 10px;
+    border-radius: 5px;
+    gap: 2vw;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.productCard img{
+    width: 165px;
+    height: 165px;
+    border-radius: 5px;
+}
+.productCard div{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
