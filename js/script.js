@@ -1,4 +1,5 @@
-/* SECCIÓN COMENTARIOS */
+/* SCRIPT COMENTARIOS */
+
 const comentArr = []
 
 const comentForm = document.querySelector(".comentForm")
@@ -29,8 +30,10 @@ comentForm.addEventListener("submit", (event) =>{
     renderComent()
 })
 
+/* ------------------------------------------------------------------------------------------------ */
 
-// SCRIPT PREGUNTAS FRECUENTES 
+/* SCRIPT PREGUNTAS FRECUENTES */
+
 let pregunta = document.querySelectorAll('.pregunta-frecuente');
 let botonDer = document.querySelectorAll('.simb-der');
 let respuesta = document.querySelectorAll('.respuesta-frecuente');
@@ -59,4 +62,30 @@ for (let i = 0; i < botonDer.length; i = i + 1) {
 
 console.log(parrafo)
 
-// --------------------------------
+/* ------------------------------------------------------------------------------------------------ */
+
+/* SCRIPT PRODUCTOS */
+
+const productContainer = document.querySelector(".productContainer")
+
+fetch("./database.json")    //Solicita el archivo .json mediante la función fetch()             
+    .then(response => response.json())  //Cuando se reciba una respuesta (response) de fetch, convierte esa respuesta a formato JSON mediante la función .json(). 
+    .then(data => {         //Cuando la conversión a JSON se complete, ejecuta una función que recibe el objeto JSON en formato JavaScript como argumento.
+        for(const producto of data){        //Bucle de iteración
+            productContainer.innerHTML +=   //Crea elementos HTML en el documento y los agrega al contenedor productContainer            
+            ` 
+            <div class="productCard">
+                <img src=${producto.img}>
+                <div>
+                    <h3>${producto.nombre}</h3>
+                    <p>Marca: ${producto.marca}</p>
+                    <p>Modelo: ${producto.modelo}</p>
+                    <p>${producto.descripción}</p>
+                    <p>ARS ${producto.precio}.00</p>
+                </div>            
+            </div>
+            `
+        }
+    })
+    
+    /* ------------------------------------------------------------------------------------------------ */
