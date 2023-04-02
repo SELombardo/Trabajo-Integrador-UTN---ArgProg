@@ -1,4 +1,5 @@
-/* SECCIÓN COMENTARIOS */
+/* SCRIPT COMENTARIOS */
+
 const comentArr = []
 
 const comentForm = document.querySelector(".comentForm")
@@ -29,7 +30,41 @@ comentForm.addEventListener("submit", (event) =>{
     renderComent()
 })
 
-/* SECCIÓN PRODUCTOS */
+/* ------------------------------------------------------------------------------------------------ */
+
+/* SCRIPT PREGUNTAS FRECUENTES */
+
+let pregunta = document.querySelectorAll('.pregunta-frecuente');
+let botonDer = document.querySelectorAll('.simb-der');
+let respuesta = document.querySelectorAll('.respuesta-frecuente');
+let parrafo = document.querySelectorAll('.respuesta-frecuente p');
+
+for (let i = 0; i < botonDer.length; i = i + 1) {
+    let altoparrafo = parrafo[i].clientHeight;
+    let conttador = 0;
+
+    botonDer[i].addEventListener('click', () => {
+        if ( conttador == 0 ) {
+            respuesta[i].style.height = `${altoparrafo}px`;
+            pregunta[i].style.marginBottom = '10px';
+            botonDer[i].innerHTML = '<i>-</i>';
+            conttador = conttador + 1
+        }
+
+        else if ( conttador == 1 ) {
+            respuesta[i].style.height = `0`;
+            pregunta[i].style.marginBottom = '0';
+            botonDer[i].innerHTML = '<i class="bi bi-chevron-compact-down"></i>';
+            conttador = conttador - 1
+        }
+    })
+}
+
+console.log(parrafo)
+
+/* ------------------------------------------------------------------------------------------------ */
+
+/* SCRIPT PRODUCTOS */
 
 const productContainer = document.querySelector(".productContainer")
 
@@ -52,3 +87,5 @@ fetch("./database.json")    //Solicita el archivo .json mediante la función fet
             `
         }
     })
+    
+    /* ------------------------------------------------------------------------------------------------ */
