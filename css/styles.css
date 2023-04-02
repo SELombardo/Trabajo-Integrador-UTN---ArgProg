@@ -50,6 +50,36 @@
     height: 20vh;
 }
 
+.footer-manu{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    background-color: rgb(190, 188, 188);
+    width: 100%;
+    padding: 20px;
+}
+
+.footer-contacto{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    
+    
+}
+
+.footer-manu a{
+    text-decoration: none;
+    color: rgb(15, 14, 14);
+}
+
+.footer-manu button{
+    background-color: azure;
+    border-radius: 8px;
+    width: 200px;
+    height: 40px;
+}
 /* ------------------------------------------------------------------------------------------------ */
 
 /* TARJETAS DE OPINION */
