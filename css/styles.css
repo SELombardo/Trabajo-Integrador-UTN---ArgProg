@@ -1,10 +1,16 @@
+:root {
+    --color-fondo: rgb(217, 241, 233);
+    --color-seccion: rgb(221, 212, 202);
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
 }
-
+body{
+    background-color: var(--color-fondo);
+}
 /* ABOVE THE FOLD */
 #hero {
     background-image: url("../img/fondo-hero.png");
@@ -67,65 +73,6 @@
 /* ------------------------------------------------------------------------------------------------ */
 
 /* SECCIONES */
-.clases-regulares{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 25px;
-    background-color: rgb(217, 241, 233);
-    padding-top: 20px;
-    padding-bottom: 20px;
-
-}
-
-.clases-regulares h2{
-    display: flex;
-    flex-direction: column;
-    font-weight: normal;
-    width: 100%;
-    background-color: rgb(192, 222, 223);
-    
-}
-
-.clases-regulares ul{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: left;
-    justify-content: center;
-    width: 50%;
-    height: 200px;
-    background-color: rgb(221, 212, 202);
-    gap: 10px;
-    padding: 30px;
-}
-
-.btntoform{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 50vh;
-    font-weight: bold;
-    font-size: x-large;
-}
-
-.negrita-titulo{
-    font-weight: bold;
-}
-
-.clases-regulares a{
-    text-decoration: none;
-    color: rgb(31, 30, 30);
-}
-
-.al-100{
-    font-size: 40px;
-    display: flex;
-    flex-direction: column;
-}
-
-
 .contactSection, .comentSection{
     padding: 5vh 10vw;
     display: flex;
@@ -140,6 +87,8 @@
     flex-direction: column;
     gap: 5vh;
     width: 60%;
+    background-color: var(--color-seccion);
+    padding: 5vh 2vw
 }
 .contactForm .inputContainer, .comentForm .inputContainer{
     display: flex;
@@ -150,6 +99,7 @@
     padding: 10px;
     border: none;
     border-bottom: 1px solid black;
+    background-color: var(--color-seccion);
 }
 .submitBtn{
     padding: 10px;
@@ -168,19 +118,83 @@
 }
 .coment{
     height: 20vh;
+    background-color: var(--color-seccion);
 }
 
-.footer-manu{
+/* CLASES REGULARES */
+
+.clases-regulares{
     display: flex;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
     text-align: center;
-    gap: 20px;
-    background-color: rgb(190, 188, 188);
+    gap: 25px;
+    background-color: rgb(217, 241, 233);
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+.clases-regulares h2{
+    display: flex;
+    flex-direction: column;
+    font-weight: normal;
+    width: 100%;
+    background-color: rgb(192, 222, 223);
+    
+}
+.clases-regulares ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    justify-content: center;
+    width: 50%;
+    height: 200px;
+    background-color: rgb(221, 212, 202);
+    gap: 10px;
+    padding: 30px;
+}
+.btntoform{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50vh;
+    font-weight: bold;
+    font-size: x-large;
+}
+.negrita-titulo{
+    font-weight: bold;
+}
+.clases-regulares a{
+    text-decoration: none;
+    color: rgb(31, 30, 30);
+}
+.al-100{
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+
+/* FOOTER */
+
+footer{
     width: 100%;
     padding: 20px;
+    display: flex;
+    font-style: italic;
+    background-color: rgb(102,102,102);
+    color: rgb(236, 224, 224);
+    flex-direction: column;
+    align-items: center;    
+    text-align: center;
+    gap: 20px;
 }
-
+footer p{
+    display: flex;
+    flex-direction: column;
+}
 .footer-contacto{
     display: flex;
     flex-direction: row;
@@ -189,17 +203,18 @@
     
 }
 
-.footer-manu a{
+footer a{
     text-decoration: none;
     color: rgb(15, 14, 14);
 }
 
-.footer-manu button{
+footer button{
     background-color: azure;
     border-radius: 8px;
     width: 200px;
     height: 40px;
 }
+
 /* ------------------------------------------------------------------------------------------------ */
 
 /* TARJETAS DE OPINION */
