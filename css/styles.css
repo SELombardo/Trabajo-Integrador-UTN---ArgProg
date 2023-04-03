@@ -67,6 +67,65 @@
 /* ------------------------------------------------------------------------------------------------ */
 
 /* SECCIONES */
+.clases-regulares{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+    background-color: rgb(217, 241, 233);
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+.clases-regulares h2{
+    display: flex;
+    flex-direction: column;
+    font-weight: normal;
+    width: 100%;
+    background-color: rgb(192, 222, 223);
+    
+}
+
+.clases-regulares ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    justify-content: center;
+    width: 50%;
+    height: 200px;
+    background-color: rgb(221, 212, 202);
+    gap: 10px;
+    padding: 30px;
+}
+
+.btntoform{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50vh;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.negrita-titulo{
+    font-weight: bold;
+}
+
+.clases-regulares a{
+    text-decoration: none;
+    color: rgb(31, 30, 30);
+}
+
+.al-100{
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+
 .contactSection, .comentSection{
     padding: 5vh 10vw;
     display: flex;
