@@ -1,0 +1,52 @@
+.header{
+    
+    border-style: outset;
+}
+a{
+    text-decoration: none;
+   
+}
+.nav{
+    display: flex;
+    justify-content:space-between;
+    max-width: 980px;
+    margin: 0 auto;
+    
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    padding: 10px;}
+    
+    .img{
+        border: radius 50px;;
+    }
+    
+.menu{
+display: flex;
+list-style: none;
+}
+.menu li{
+    padding: 0 15px;
+}
+.sobrenosotros{
+    display: flex;
+    margin-left: 100px;
+    margin-top: 25px;
+    text-align:justify;
+    width: 850px;
+    justify-content: left;
+    align-items: center;
+    border-top-right-radius: 5px 5px 5px;
+   
+
+}
+   .sobrenosotros img{
+    width:400px ;
+    margin-left: 100px;
+    justify-content: center;
+    border-radius: 15px;
+   }
+    
+   
