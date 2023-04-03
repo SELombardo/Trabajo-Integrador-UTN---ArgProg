@@ -1,3 +1,25 @@
+/* SCRIPT ABOVE THE FOLD */
+
+const heroParagraph = document.getElementById('hero-paragraph');
+
+function isElementInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+function animate() {
+    if (isElementInViewport(heroParagraph)) {
+        heroParagraph.classList.add('slide-in-from-right');
+    }
+}
+
+window.addEventListener('scroll', animate);
+
 /* SCRIPT COMENTARIOS */
 
 const comentArr = []

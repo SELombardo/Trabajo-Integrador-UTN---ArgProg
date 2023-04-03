@@ -18,23 +18,46 @@
     </header>
     <!-- MAIN -->
     <main>
-
-    <!-- SECCIÓN CLASES REGULARES MANU -->
-    <h1>Comenzá tu día<br>
-        <b>con las energías recargadas al 100 %</b><br>
-        luego de una clase de acroyoga</h1>
-        <ul>
-            <li>Desarrollá tus habilidades en todos los aspectos de la práctica,<br>
-                accediendo a un programa de clases regulares, sistematizadas<br>
-                y planificadas.</li>
-            <li>Mejorá tus habilidades para la comunicación interpersonal,<br>
-                aprendiendo a comunicarte de manera no violenta con les otres.</li>
-            <li>Sentí la conexión con la naturaleza, contemplando el mar<br>
-                y escuchando el sonido de las olas mientras «volás».</li>
-          </ul>
-    <button><b>Quiero comenzar<br>
-        el día al 100 %</b></button>
-
+        <!-- ABOVE THE FOLD -->
+        <section> 
+            <div id="hero">
+                <p class="slide-in-from-right" id="hero-paragraph" >"Sé consciente de tu cuerpo, afianzá tu fuerza y lográ más flexibilidad junto a otres, gracias al acroyoga"</p>
+            </div>
+            <p id="paragraph2"><i>Experimentá la sabiduría del yoga, el dinamismo de la acrobacia y la relajación profunda del masaje tailandés, en un entorno cuidado, de escucha y confianza</i></p>
+            <div id="lista-e-imagen">
+                <div id="lista">
+                    <ul id="lista">
+                        <li>¿Sentís que tu consciencia corporal podría mejorar?</li>
+                        <li>¿Te gustaría comenzar el día haciendo algo para vos?</li>
+                        <li>¿Necesitás ejercitar tu capacidad de comunicarte con les demás?</li>
+                    </ul>
+                </div>
+                <div id="imagen">
+                    <img src="./img/personas-haciendo-acroyoga.png" alt="personas haciendo acroyoga">
+                </div>
+            </div>
+            <p id="paragraph3">Sentirte desconectade de tu cuerpo puede causar desgano,<br> falta de confianza en vos misme y<br> dificultad para relacionarte con otras personas</p>
+            <p id="paragraph4">Desarrollá tu conciencia corporal y disfrutá de la posibilidad de <br> ser sostén y de ser sostenide, gracias a <br> la práctica regular de acroyoga</p>
+            <div id="imagen-confianza">
+                <img src="./img/personas-sosteniendose-entre-ellas-practicando-confianza.jpg" alt="personas sosteniendose entre ellas practicando la confianza">
+            </div>
+        </section>             
+        <!-- SECCIÓN CLASES REGULARES -->
+        <section class="clases-regulares">
+            <h2>Comenzá tu día con las <span class="negrita-titulo">energías recargadas al 100 %</span> luego de una clase de acroyoga</h2>
+                <ul style="list-style-type: circle;">
+                    <li>Desarrollá tus habilidades en todos los aspectos de la práctica,
+                        accediendo a un programa de clases regulares, sistematizadas
+                        y planificadas.</li>
+                    <li>Mejorá tus habilidades para la comunicación interpersonal,
+                        aprendiendo a comunicarte de manera no violenta con les otres.</li>
+                    <li>Sentí la conexión con la naturaleza, contemplando el mar
+                        y escuchando el sonido de las olas mientras «volás».</li>
+                </ul>
+            <button class="btntoform" onclick="location.href='#contactSection'">
+                Quiero comenzar el día <span class="al-100">al 100 % </span>
+            </button>
+        </section>
         <!-- SECCION COMENTARIOS -->
         <section class="comentSection">
             <h2>La familia Acroyogui anda diciendo...</h2>
@@ -68,36 +91,7 @@
                 </div>
                 <input type="submit" value="Enviar" class="submitBtn">
             </form>
-        </section>
-        
-        <!-- FORMULARIO DE CONTACTO -->
-        <section class="contactSection">
-            <form class="contactForm">
-                <h2 id="form-title">Contactá con nosotros</h2>
-                <div class="inputContainer">
-                    <label for="nombre">Ingrese su nombre</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="nombre" required >
-                </div>
-                <div class="inputContainer">
-                    <label for="apellido">Ingrese su apellido</label>
-                    <input type="text" id="apellido" name="apellido" placeholder="apellido" required>
-                </div>    
-                <div class="inputContainer">
-                    <label for="email">Ingrese su correo electrónico</label>
-                    <input type="email" id="email" name="email" required placeholder="ejemplo@gmail.com">
-                </div> 
-                <div class="inputContainer">
-                    <label for="telefono">Ingrese su número telefónico</label>
-                    <input type="tel" id="telefono" name="telefono" placeholder="000-0000-0000">
-                </div>
-                <div class="inputContainer">
-                    <label for="coment">Seccion de comentarios:</label>
-                    <textarea id="coment" name="coment" class="coment" placeholder="Introduce tu comentario..."></textarea>
-                </div>
-                <input type="submit" class="submitBtn">
-            </form>
-        </section>
-        
+        </section>        
         <!-- PREGUNTAS-FRECUENTES -->    
         <section class="container-preguntas">
             <h3>Preguntas Frecuentes</h3>
@@ -149,12 +143,38 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores dolore ullam aspernatur, praesentium, eos officiis nisi quaerat neque reprehenderit adipisicing elit aut doloremque eum suscipit, quo doloribus accusantium.</p>
                 </div>
             </div>
-        </section>
-        
+        </section>        
         <!-- SECCION PRODUCTOS -->
         <section class="productSection">
             <h2>Nuestros Productos</h2>
             <div class="productContainer"></div>
+        </section>        
+        <!-- FORMULARIO DE CONTACTO -->
+        <section class="contactSection" id="contactSection">
+            <form class="contactForm">
+                <h2 id="form-title">Contactá con nosotros</h2>
+                <div class="inputContainer">
+                    <label for="nombre">Ingrese su nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="nombre" required >
+                </div>
+                <div class="inputContainer">
+                    <label for="apellido">Ingrese su apellido</label>
+                    <input type="text" id="apellido" name="apellido" placeholder="apellido" required>
+                </div>    
+                <div class="inputContainer">
+                    <label for="email">Ingrese su correo electrónico</label>
+                    <input type="email" id="email" name="email" required placeholder="ejemplo@gmail.com">
+                </div> 
+                <div class="inputContainer">
+                    <label for="telefono">Ingrese su número telefónico</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="000-0000-0000">
+                </div>
+                <div class="inputContainer">
+                    <label for="coment">Seccion de comentarios:</label>
+                    <textarea id="coment" name="coment" class="coment" placeholder="Introduce tu comentario..."></textarea>
+                </div>
+                <input type="submit" class="submitBtn">
+            </form>
         </section>
     </main>
     <!-- FOOTER -->
