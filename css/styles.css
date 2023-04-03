@@ -4,31 +4,27 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
-/* ABOVE THE FOLD */
 
+/* ABOVE THE FOLD */
 #hero {
-    background-image: url("/img/fondo-hero.png");
+    background-image: url("../img/fondo-hero.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     display: flex;  
 }
-
 #hero-paragraph {
     font-size: 150%;
     color: aliceblue;
     text-align: center;
     padding: 5% 5% 5% 5%;
 
-}
-    
-    /*animation*/
+} 
 
-
+/*animation*/
 .slide-in-from-right {
     animation: slide-in-right 2s ease forwards;
     visibility: visible;
 }
-
 @keyframes slide-in-right {
     from {
         transform: translateX(100%);
@@ -37,43 +33,38 @@
         transform: translateX(0);
     }
 }
-
 #paragraph2 {
     font-size: 140%;
     border: 1px solid black;
     padding: 3%;
 }
-
 #lista-e-imagen {
     columns: 2;
 }
-
 #lista {
     padding: 5%;
 }
 
-
 #lista li {
     padding: 5%;
 }
-
 #paragraph3 {
     font-size: 150%;
     padding: 1% 1% 3% 3%;
     text-align: center;
     line-height: 130%;
 }
-
 #paragraph4 {
     font-size: 150%;
     padding: 1% 1% 3% 3%;
     text-align: center;
     line-height: 130%;
 }
-
 #imagen-confianza {
     text-align: center;
 }
+
+/* ------------------------------------------------------------------------------------------------ */
 
 /* SECCIONES */
 .contactSection, .comentSection{
