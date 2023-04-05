@@ -1,4 +1,4 @@
- @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
 
 :root {
     --color-fondo: white;
@@ -71,7 +71,6 @@ h2{
 #lista {
     display: flex;
     flex-direction: column;
-    
 }
 #lista li{
     padding: 5%;
@@ -163,7 +162,6 @@ li::marker {
 /* ------------------------------------------------------------------------------------------------ */
 
 /* CLASES REGULARES */
-
 .clases-regulares{
     display: flex;
     flex-direction: column;
@@ -222,6 +220,26 @@ li::marker {
 
 /* ------------------------------------------------------------------------------------------------ */
 
+/* SOBRE NOSOTROS */
+.sectionAboutus{
+    display: flex;
+    margin-left: 100px;
+    margin-top: 25px;
+    text-align:justify;
+    width: 850px;
+    justify-content: left;
+    align-items: center;
+    border-top-right-radius: 5px 5px 5px;
+}
+.sectionAboutus img{
+    width:400px ;
+    margin-left: 100px;
+    justify-content: center;
+    border-radius: 15px;
+ }
+
+/* ------------------------------------------------------------------------------------------------ */
+ 
 /* TARJETAS DE OPINION */
 .opiniones{
     display: flex;
@@ -389,3 +407,4 @@ footer a{
 }
 
 /* ------------------------------------------------------------------------------------------------ */
+
