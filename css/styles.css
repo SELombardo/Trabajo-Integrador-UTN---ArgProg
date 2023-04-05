@@ -56,27 +56,25 @@ h2{
 }
 #lista-e-imagen {
     padding: 2%;
-    width: 90%;
+    width: 80%;
     margin: 1% auto 5%;
     display: flex;
-    flex-direction: row; 
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    box-shadow: 40px 40px 0px rgb(46,76,76);
     font-size: 1.1em;
     background-color: var(--color-seccion);
+    box-shadow: 40px 40px 0px rgb(46,76,76);
 
 }
-#lista {
-    display: flex;
-    flex-direction: column;
-}
 #lista li{
-    padding: 5%;
+    width: 60%;
+    padding: 10px;
+    margin: 0px auto;
+    font-size: 1.1em;
+}
 }
 li::marker {
-    font-size: 25px;
+    font-size: 1.5em;
 }
 #paragraph3, #paragraph4 {
     padding: 0.5% 3%;
@@ -95,7 +93,7 @@ li::marker {
 /* ------------------------------------------------------------------------------------------------ */
 
 /* SECCIONES */
-.contactSection, .comentSection{
+.contactSection, .comentSection, .sectionAboutus{
     padding: 5vh 10vw;
     display: flex;
     flex-direction: column;
@@ -168,7 +166,7 @@ li::marker {
     align-items: center;
     text-align: center;
     gap: 25px;
-    background-color: rgb(192, 222, 223);
+    background-color: rgb(201,211,221);
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -191,7 +189,7 @@ li::marker {
     text-align: left;
     gap: 15px;
     background-color: rgb(221, 212, 202);
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
     padding: 2% 5%;
 }
 .btntoform{
@@ -221,22 +219,23 @@ li::marker {
 /* ------------------------------------------------------------------------------------------------ */
 
 /* SOBRE NOSOTROS */
-.sectionAboutus{
+.sectionAboutus div{
     display: flex;
-    margin-left: 100px;
-    margin-top: 25px;
-    text-align:justify;
-    width: 850px;
-    justify-content: left;
     align-items: center;
-    border-top-right-radius: 5px 5px 5px;
+    gap: 20px 50px;
+    text-align: justify;
+}
+.paragraphs{
+    display: flex;
+    flex-direction: column;
+} 
+.sectionAboutus div p:last-of-type {
+    font-weight: bold;
+    font-size: 1.2em;
 }
 .sectionAboutus img{
-    width:400px ;
-    margin-left: 100px;
-    justify-content: center;
-    border-radius: 15px;
- }
+    box-shadow: 40px 40px 0px rgb(201,221,212);
+}
 
 /* ------------------------------------------------------------------------------------------------ */
  
@@ -355,23 +354,24 @@ li::marker {
     width: 40%;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     flex-wrap: wrap;
-    background-color:var(--color-seccion);
-    padding: 10px;
-    gap: 2vw;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    background-color:white;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
     font-size: 0.9em;   
 }
 .productCard img{
-    width: 165px;
-    height: 165px;
-    border-radius: 5px;
+    margin: auto 0px;
+    width: 40%;
+    height: auto;
 }
 .productCard div{
+    padding: 10px 0px 10px 10px;
     width: 60%;
     display: flex;
     flex-direction: column;
     gap: 5px;
+    background-color: rgb(201,221,212);
 }
 
 /* ------------------------------------------------------------------------------------------------ */
