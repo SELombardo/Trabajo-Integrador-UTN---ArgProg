@@ -5,74 +5,221 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./css/styles.css">
     <title>Trabajo Integrador</title>
-<!-- para conectar css con html -->
-    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    
-    <header class="header">
-        <nav class="nav">
-            <a href="#" class="logo">
-               <img
-                height=30px 
-                width="30px"  
-                src="img-logo.svg" alt="circulo de acceso universal">
-                
-<div>
-   Brand.com
-</div>
-            </a>
-            <ul class="menu">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="">Clases Regulares</a></li>
-                <li><a href="#Sobre Nosotros">Sobre Nosotros</a></li>
-                <li><a href="">Comunidad Acroyoga</a></li>
-                <li><a href="">Preguntas Frecuentes</a></li>
-                <li><a href="">FAQ</a></li>
-
-            </ul>
-        </nav>
-    
+    <!-- HEADER -->
+    <header>
+        <!-- NAV -->
+        <nav></nav>
     </header>
-    
+    <!-- MAIN -->
     <main>
-      <div class="sobrenosotros">
+        
+        <div id="hero">
+            <p class="slide-in-from-right" id="hero-paragraph" >"Sé consciente de tu cuerpo, afianzá tu fuerza y lográ más flexibilidad junto a otres, gracias al acroyoga"</p>
+        </div>
 
-
+        <!-- ABOVE THE FOLD -->
+        <section class="sectionAbove">            
+            <p id="paragraph2">Experimentá la sabiduría del yoga, el dinamismo de la acrobacia y la relajación profunda del masaje tailandés, en un entorno cuidado, de escucha y confianza</p>
+            <div id="lista-e-imagen">
+                <div id="lista">
+                    <ul>
+                        <li>¿Sentís que tu consciencia corporal podría mejorar?</li>
+                        <li>¿Te gustaría comenzar el día haciendo algo para vos?</li>
+                        <li>¿Necesitás ejercitar tu capacidad de comunicarte con les demás?</li>
+                    </ul>
+                </div>
+                <div id="imagen">
+                    <img src="./img/personas-haciendo-acroyoga.png" alt="personas haciendo acroyoga">
+                </div>
+            </div>
+            <p id="paragraph3">Sentirte desconectade de tu cuerpo puede causar desgano,<br> 
+                falta de confianza en vos misme y<br>
+                dificultad para relacionarte con otras personas</p>
+            <p id="paragraph4">Desarrollá tu conciencia corporal y disfrutá de la posibilidad de <br> 
+            ser sostén y de ser sostenide, gracias a <br> 
+            la práctica regular de acroyoga</p>
+            <div id="imagen-confianza">
+                <img src="./img/personas-sosteniendose-entre-ellas-practicando-confianza.jpg" alt="personas sosteniendose entre ellas practicando la confianza">
+            </div>
+        </section>             
+        <!-- SECCIÓN CLASES REGULARES -->
+        <section class="clases-regulares">
+            <h2>Comenzá tu día con las <span>energías recargadas al 100 %</span> luego de una clase de acroyoga</h2>
+                <ul>
+                    <li>Desarrollá tus habilidades en todos los aspectos de la práctica,
+                        accediendo a un programa de clases regulares, sistematizadas
+                        y planificadas.</li>
+                    <li>Mejorá tus habilidades para la comunicación interpersonal,
+                        aprendiendo a comunicarte de manera no violenta con les otres.</li>
+                    <li>Sentí la conexión con la naturaleza, contemplando el mar
+                        y escuchando el sonido de las olas mientras «volás».</li>
+                </ul>
+            <button class="btntoform" onclick="location.href='#contactSection'">
+                Quiero comenzar el día <span>al 100 % </span>
+            </button>
+        </section>
+        <!-- SECCION ABOUT US -->
+        <section class="sectionAboutus">
         <div>
-            <h1> Nuestra Historia </h1>
+          <h1> Nuestra Historia </h1>
             <p>Si hoy llegaste hasta acá es porque un <br> aspecto de vos misme está latente,<br> esperando a que lo encuentres, <br> lo escuches y le permitas ser. <br><br>
 
-        La práctica del acroyoga te acompaña en ese proceso. <br><br>
+            La práctica del acroyoga te acompaña en ese proceso. <br><br>
         
-        Somos Alo y Manu, una pareja de marides,<br>  viajeres y emprendedores muy manijas. <br><br>
-        
-        Desde el año 2017 estamos viajando por <br> Latinoamérica, compartiendo clases de <br> acroyoga en centros culturales, hostels y <br> en las playas. <br><br>
-        
-        Desde que nos conocimos comenzamos a <br> hacer acroyoga y a volar juntes, llevando <br> todo el amor que sentimos por esta <br> práctica a cada lugar al que llegamos. <br><br>
-        
-        El acroyoga es una disciplina que <br> transformó la manera en la que nos <br> relacionamos con nosotres mismes <br> y con les otres. <br><br>
-        
-        Nos presentó el desafío de confiar en les demás, <br> soltar nuestros miedos y <br> permitirnos volar junto, con y gracias a otres. <br><br>
-        
-        Compartimos el acroyoga con el objetivo <br> de sembrar la semilla de la comunidad en <br> cada rincón del mundo, <br> para que en el futuro todes podamos caminar <br> a través de  un bosque de respeto, compañerismo <br> y empatía.
-    </p>
-    
+            Somos Alo y Manu, una pareja de marides,<br>  viajeres y emprendedores muy manijas. <br><br>
 
-</div>
-        <img src="img-sobre nosotros/image1.png">  
-      </div>
+            Desde el año 2017 estamos viajando por <br> Latinoamérica, compartiendo clases de <br> acroyoga en centros culturales, hostels y <br> en las playas. <br><br>
 
- 
+            Desde que nos conocimos comenzamos a <br> hacer acroyoga y a volar juntes, llevando <br> todo el amor que sentimos por esta <br> práctica a cada lugar al que llegamos. <br><br>
+
+            El acroyoga es una disciplina que <br> transformó la manera en la que nos <br> relacionamos con nosotres mismes <br> y con les otres. <br><br>
+
+            Nos presentó el desafío de confiar en les demás, <br> soltar nuestros miedos y <br> permitirnos volar junto, con y gracias a otres. <br><br>
+
+            Compartimos el acroyoga con el objetivo <br> de sembrar la semilla de la comunidad en <br> cada rincón del mundo, <br> para que en el futuro todes podamos caminar <br> a través de  un bosque de respeto, compañerismo <br> y empatía.
+            </p>
+          </div>
+            <img src="img-sobre nosotros/image1.png">  
+       </section>
+        <!-- SECCION COMENTARIOS -->
+        <section class="comentSection">
+            <h2>La familia Acroyogui anda diciendo...</h2>
+            <div class="opiniones">
+                <!-- CONTENEDOR DE OPINIONES -->
+                <div class="comentContainer"></div>
+                <!-- OPINIONES POR DEFAULT -->
+                <div class="cardOpinion">
+                    <img class="cardImg" src="../img/useranonimous.png">
+                    <div>                    
+                        <h3>Mercedes Reppucci:</h3>
+                        <p>"Desde que comencé acroyoga, en lo físico, mejoré mi elongación, adquirí fuerza en los brazos y en los abdominales. Logré tomar conciencia de mi respiración y concentrarme en la postura de mi cuerpo. El mayor cambio que experimenté fue mental, ya que las clases me brindaron confianza en mis propias habilidades y en los otros como sostén, guía y acompañamiento."</p>
+                    </div>
+                </div>
+                <div class="cardOpinion">
+                    <img class="cardImg" src="../img/useranonimous.png">
+                    <div>                    
+                        <h3>Azul Villar:</h3>
+                        <p>"Este ejercicio me ayudó a conocer mejor mi cuerpo y sus respuestas frente a diferentes estímulos. Ahora puedo disfrutarme más, aprendí a sanarme y a quererme. Desde este lugar siento que puedo ser más empática con la consciencia corporal de les demás."</p>
+                    </div>
+                </div>
+            </div>
+            <form class="formulario" id="comentForm">
+                <div class="inputContainer">
+                    <label for="nombre">Ingrese su nombre</label>
+                    <input type="text" name="nombre" placeholder="nombre" id="nombre" required>
+                </div>
+                <div class="inputContainer">
+                    <label for="comentArea">Tu opinion nos interesa</label>
+                    <textarea id="comentArea" name="comentArea" class="comentArea" placeholder="Añade tu comentario..." required></textarea>
+                </div>
+                <input type="submit" value="Enviar" class="submitBtn">
+            </form>
+        </section>        
+        <!-- PREGUNTAS-FRECUENTES -->    
+        <section class="container-preguntas">
+            <h2>Preguntas Frecuentes</h2>
+            <div class="preguntas-frecuentes">
+                <div class="pregunta-frecuente">
+                    <i class="bi bi-question simb-izq"></i><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ex nulla recusandae quae voluptatibus maiores necessitatibus? Omnis, dignissimos impedit. Debitis?</p><div class="simb-der"><i class="bi bi-chevron-compact-down"></i></div>
+                </div>
+                <div class="respuesta-frecuente">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores dolore ullam aspernatur, praesentium, eos officiis nisi quaerat neque reprehenderit adipisicing elit aut doloremque eum suscipit, quo doloribus accusantium.</p>
+                </div>
+            </div>
+            <div class="preguntas-frecuentes">
+                <div class="pregunta-frecuente">
+                    <i class="bi bi-question simb-izq"></i><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ex nulla recusandae quae voluptatibus maiores necessitatibus? Omnis, dignissimos impedit. Debitis?</p><div class="simb-der"><i class="bi bi-chevron-compact-down"></i></div>
+                </div>
+                <div class="respuesta-frecuente">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores dolore ullam aspernatur, praesentium, eos officiis nisi quaerat neque reprehenderit adipisicing elit aut doloremque eum suscipit, quo doloribus accusantium.</p>
+                </div>
+            </div>
+            <div class="preguntas-frecuentes">
+                <div class="pregunta-frecuente">
+                    <i class="bi bi-question simb-izq"></i><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ex nulla recusandae quae voluptatibus maiores necessitatibus? Omnis, dignissimos impedit. Debitis?</p><div class="simb-der"><i class="bi bi-chevron-compact-down"></i></div>
+                </div>
+                <div class="respuesta-frecuente">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores dolore ullam aspernatur, praesentium, eos officiis nisi quaerat neque reprehenderit adipisicing elit aut doloremque eum suscipit, quo doloribus accusantium.</p>
+                </div>
+            </div>
+            <div class="preguntas-frecuentes">
+                <div class="pregunta-frecuente">
+                    <i class="bi bi-question simb-izq"></i><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ex nulla recusandae quae voluptatibus maiores necessitatibus? Omnis, dignissimos impedit. Debitis?</p><div class="simb-der"><i class="bi bi-chevron-compact-down"></i></div>
+                </div>
+                <div class="respuesta-frecuente">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores dolore ullam aspernatur, praesentium, eos officiis nisi quaerat neque reprehenderit adipisicing elit aut doloremque eum suscipit, quo doloribus accusantium.</p>
+                </div>
+            </div>
+            <div class="preguntas-frecuentes">
+                <div class="pregunta-frecuente">
+                    <i class="bi bi-question simb-izq"></i><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ex nulla recusandae quae voluptatibus maiores necessitatibus? Omnis, dignissimos impedit. Debitis?</p><div class="simb-der"><i class="bi bi-chevron-compact-down"></i></div>
+                </div>
+                <div class="respuesta-frecuente">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores dolore ullam aspernatur, praesentium, eos officiis nisi quaerat neque reprehenderit adipisicing elit aut doloremque eum suscipit, quo doloribus accusantium.</p>
+                </div>
+            </div>
+            <div class="preguntas-frecuentes">
+                <div class="pregunta-frecuente">
+                    <i class="bi bi-question simb-izq"></i><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ex nulla recusandae quae voluptatibus maiores necessitatibus? Omnis, dignissimos impedit. Debitis?</p><div class="simb-der"><i class="bi bi-chevron-compact-down"></i></div>
+                </div>
+                <div class="respuesta-frecuente">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores dolore ullam aspernatur, praesentium, eos officiis nisi quaerat neque reprehenderit adipisicing elit aut doloremque eum suscipit, quo doloribus accusantium.</p>
+                </div>
+            </div>
+        </section>        
+        <!-- SECCION PRODUCTOS -->
+        <section class="productSection">
+            <h2>Nuestros Productos</h2>
+            <div class="productContainer"></div>
+        </section>        
+        <!-- FORMULARIO DE CONTACTO -->
+        <section class="contactSection" id="contactSection">
+            <form class="formulario" id="contactForm">
+                <h2 id="form-title">Contactá con nosotros</h2>
+                <div class="inputContainer">
+                    <label for="nombre">Ingrese su nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="nombre" required >
+                </div>
+                <div class="inputContainer">
+                    <label for="apellido">Ingrese su apellido</label>
+                    <input type="text" id="apellido" name="apellido" placeholder="apellido" required>
+                </div>    
+                <div class="inputContainer">
+                    <label for="email">Ingrese su correo electrónico</label>
+                    <input type="email" id="email" name="email" required placeholder="ejemplo@gmail.com">
+                </div> 
+                <div class="inputContainer">
+                    <label for="telefono">Ingrese su número telefónico</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="000-0000-0000">
+                </div>
+                <div class="inputContainer">
+                    <label for="comentArea">Dejanos tu consulta</label>
+                    <textarea id="comentArea" name="comentArea" class="comentArea" placeholder="Añade un comentario..."></textarea>
+                </div>
+                <input type="submit" class="submitBtn">
+            </form>
+        </section>
     </main>
-    
-    <footer></footer>
+    <!-- FOOTER -->
+    <footer>
+        <p>Ahorrá tiempo accediendo de manera directa a toda la información que necesitás 
+            <span>para sumarte a nuestras clases regulares de acroyoga.</span>
+            <span>Escribinos por WhatsApp o IG</span>
+        </p>
+        <div class="footer-contacto">
+            <a href="https://wa.me/+5492920294708" target="_blank">
+                <i class="bi bi-whatsapp"></i> +5492920294708</a>
+            <a href="https://www.instagram.com" target="_blank">
+                <i class="bi bi-instagram"></i> @acroyogalasgrutas</a>
+        </div>
+        <p>&copy; 2023 Clases de acroyoga. Todos los derechos reservados. Argentina Programa 4.0</p>
+    </footer>
     <script src="./js/script.js"></script>
 </body>
-
-
-
 </html>
