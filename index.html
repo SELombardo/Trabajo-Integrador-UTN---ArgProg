@@ -18,15 +18,17 @@
     </header>
     <!-- MAIN -->
     <main>
+        
+        <div id="hero">
+            <p class="slide-in-from-right" id="hero-paragraph" >"Sé consciente de tu cuerpo, afianzá tu fuerza y lográ más flexibilidad junto a otres, gracias al acroyoga"</p>
+        </div>
+
         <!-- ABOVE THE FOLD -->
-        <section> 
-            <div id="hero">
-                <p class="slide-in-from-right" id="hero-paragraph" >"Sé consciente de tu cuerpo, afianzá tu fuerza y lográ más flexibilidad junto a otres, gracias al acroyoga"</p>
-            </div>
-            <p id="paragraph2"><i>Experimentá la sabiduría del yoga, el dinamismo de la acrobacia y la relajación profunda del masaje tailandés, en un entorno cuidado, de escucha y confianza</i></p>
+        <section class="sectionAbove">            
+            <p id="paragraph2">Experimentá la sabiduría del yoga, el dinamismo de la acrobacia y la relajación profunda del masaje tailandés, en un entorno cuidado, de escucha y confianza</p>
             <div id="lista-e-imagen">
                 <div id="lista">
-                    <ul id="lista">
+                    <ul>
                         <li>¿Sentís que tu consciencia corporal podría mejorar?</li>
                         <li>¿Te gustaría comenzar el día haciendo algo para vos?</li>
                         <li>¿Necesitás ejercitar tu capacidad de comunicarte con les demás?</li>
@@ -36,16 +38,20 @@
                     <img src="./img/personas-haciendo-acroyoga.png" alt="personas haciendo acroyoga">
                 </div>
             </div>
-            <p id="paragraph3">Sentirte desconectade de tu cuerpo puede causar desgano,<br> falta de confianza en vos misme y<br> dificultad para relacionarte con otras personas</p>
-            <p id="paragraph4">Desarrollá tu conciencia corporal y disfrutá de la posibilidad de <br> ser sostén y de ser sostenide, gracias a <br> la práctica regular de acroyoga</p>
+            <p id="paragraph3">Sentirte desconectade de tu cuerpo puede causar desgano,<br> 
+                falta de confianza en vos misme y<br>
+                dificultad para relacionarte con otras personas</p>
+            <p id="paragraph4">Desarrollá tu conciencia corporal y disfrutá de la posibilidad de <br> 
+            ser sostén y de ser sostenide, gracias a <br> 
+            la práctica regular de acroyoga</p>
             <div id="imagen-confianza">
                 <img src="./img/personas-sosteniendose-entre-ellas-practicando-confianza.jpg" alt="personas sosteniendose entre ellas practicando la confianza">
             </div>
         </section>             
         <!-- SECCIÓN CLASES REGULARES -->
         <section class="clases-regulares">
-            <h2>Comenzá tu día con las <span class="negrita-titulo">energías recargadas al 100 %</span> luego de una clase de acroyoga</h2>
-                <ul style="list-style-type: circle;">
+            <h2>Comenzá tu día con las <span>energías recargadas al 100 %</span> luego de una clase de acroyoga</h2>
+                <ul>
                     <li>Desarrollá tus habilidades en todos los aspectos de la práctica,
                         accediendo a un programa de clases regulares, sistematizadas
                         y planificadas.</li>
@@ -55,7 +61,7 @@
                         y escuchando el sonido de las olas mientras «volás».</li>
                 </ul>
             <button class="btntoform" onclick="location.href='#contactSection'">
-                Quiero comenzar el día <span class="al-100">al 100 % </span>
+                Quiero comenzar el día <span>al 100 % </span>
             </button>
         </section>
         <!-- SECCION COMENTARIOS -->
@@ -66,35 +72,35 @@
                 <div class="comentContainer"></div>
                 <!-- OPINIONES POR DEFAULT -->
                 <div class="cardOpinion">
-                    <img class="cardImg" src="https://static.vecteezy.com/system/resources/previews/007/226/475/non_2x/user-account-circle-glyph-color-icon-user-profile-picture-userpic-silhouette-symbol-on-white-background-with-no-outline-negative-space-illustration-vector.jpg">
+                    <img class="cardImg" src="../img/useranonimous.png">
                     <div>                    
                         <h3>Mercedes Reppucci:</h3>
                         <p>"Desde que comencé acroyoga, en lo físico, mejoré mi elongación, adquirí fuerza en los brazos y en los abdominales. Logré tomar conciencia de mi respiración y concentrarme en la postura de mi cuerpo. El mayor cambio que experimenté fue mental, ya que las clases me brindaron confianza en mis propias habilidades y en los otros como sostén, guía y acompañamiento."</p>
                     </div>
                 </div>
                 <div class="cardOpinion">
-                    <img class="cardImg" src="https://static.vecteezy.com/system/resources/previews/007/226/475/non_2x/user-account-circle-glyph-color-icon-user-profile-picture-userpic-silhouette-symbol-on-white-background-with-no-outline-negative-space-illustration-vector.jpg">
+                    <img class="cardImg" src="../img/useranonimous.png">
                     <div>                    
                         <h3>Azul Villar:</h3>
                         <p>"Este ejercicio me ayudó a conocer mejor mi cuerpo y sus respuestas frente a diferentes estímulos. Ahora puedo disfrutarme más, aprendí a sanarme y a quererme. Desde este lugar siento que puedo ser más empática con la consciencia corporal de les demás."</p>
                     </div>
                 </div>
             </div>
-            <form class="comentForm">
+            <form class="formulario" id="comentForm">
                 <div class="inputContainer">
                     <label for="nombre">Ingrese su nombre</label>
                     <input type="text" name="nombre" placeholder="nombre" id="nombre" required>
                 </div>
                 <div class="inputContainer">
-                    <label for="coment">Tu opinion nos interesa</label>
-                    <textarea id="coment" name="coment" class="coment" placeholder="Añade tu comentario..." required></textarea>
+                    <label for="comentArea">Tu opinion nos interesa</label>
+                    <textarea id="comentArea" name="comentArea" class="comentArea" placeholder="Añade tu comentario..." required></textarea>
                 </div>
                 <input type="submit" value="Enviar" class="submitBtn">
             </form>
         </section>        
         <!-- PREGUNTAS-FRECUENTES -->    
         <section class="container-preguntas">
-            <h3>Preguntas Frecuentes</h3>
+            <h2>Preguntas Frecuentes</h2>
             <div class="preguntas-frecuentes">
                 <div class="pregunta-frecuente">
                     <i class="bi bi-question simb-izq"></i><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ex nulla recusandae quae voluptatibus maiores necessitatibus? Omnis, dignissimos impedit. Debitis?</p><div class="simb-der"><i class="bi bi-chevron-compact-down"></i></div>
@@ -151,7 +157,7 @@
         </section>        
         <!-- FORMULARIO DE CONTACTO -->
         <section class="contactSection" id="contactSection">
-            <form class="contactForm">
+            <form class="formulario" id="contactForm">
                 <h2 id="form-title">Contactá con nosotros</h2>
                 <div class="inputContainer">
                     <label for="nombre">Ingrese su nombre</label>
@@ -170,8 +176,8 @@
                     <input type="tel" id="telefono" name="telefono" placeholder="000-0000-0000">
                 </div>
                 <div class="inputContainer">
-                    <label for="coment">Seccion de comentarios:</label>
-                    <textarea id="coment" name="coment" class="coment" placeholder="Introduce tu comentario..."></textarea>
+                    <label for="comentArea">Dejanos tu consulta</label>
+                    <textarea id="comentArea" name="comentArea" class="comentArea" placeholder="Añade un comentario..."></textarea>
                 </div>
                 <input type="submit" class="submitBtn">
             </form>
@@ -184,14 +190,10 @@
             <span>Escribinos por WhatsApp o IG</span>
         </p>
         <div class="footer-contacto">
-            <button>
-                <i class="bi bi-whatsapp"></i>
-                <a href="https://wa.me/+5492920294708" target="_blank">+5492920294708</a>
-            </button>
-            <button>
-                <i class="bi bi-instagram"></i>
-                <a href="https://www.instagram.com" target="_blank">@acroyogalasgrutas</a>
-            </button>
+            <a href="https://wa.me/+5492920294708" target="_blank">
+                <i class="bi bi-whatsapp"></i> +5492920294708</a>
+            <a href="https://www.instagram.com" target="_blank">
+                <i class="bi bi-instagram"></i> @acroyogalasgrutas</a>
         </div>
         <p>&copy; 2023 Clases de acroyoga. Todos los derechos reservados. Argentina Programa 4.0</p>
     </footer>

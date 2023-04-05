@@ -1,73 +1,96 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
 :root {
-    --color-fondo: rgb(217, 241, 233);
+    --color-fondo: white;
     --color-seccion: rgb(221, 212, 202);
+    --color-fuente: #2e4c4c;
 }
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 body{
     background-color: var(--color-fondo);
+    font-size: 16px;
+    color: var(--color-fuente);
 }
+h2{
+    font-size: 1.8em; 
+}
+
 /* ABOVE THE FOLD */
 #hero {
-    background-image: url("../img/fondo-hero.png");
+    display: flex; 
+    align-items: center;
+    background-image: url("../img/BLOGPOST_MOBILE_NUEVA.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    display: flex;  
+    height: 40vh;
 }
-#hero-paragraph {
-    font-size: 150%;
-    color: aliceblue;
-    text-align: center;
-    padding: 5% 5% 5% 5%;
-
-} 
-
-/*animation*/
-.slide-in-from-right {
-    animation: slide-in-right 2s ease forwards;
-    visibility: visible;
-}
-@keyframes slide-in-right {
-    from {
-        transform: translateX(100%);
+    /* hero animation */
+    .slide-in-from-right {
+        animation: slide-in-right 2s ease forwards;
+        visibility: visible;
     }
-    to {
-        transform: translateX(0);
+    @keyframes slide-in-right {
+        from {
+            transform: translateX(100%);
+        }
+        to {
+            transform: translateX(0);
+        }
     }
-}
+    #hero-paragraph {
+        font-size: 2.2em;
+        font-weight: 500;
+        color: #2c4c4c;
+        text-align: center;
+        padding: 5% 5% 5% 5%;
+    } 
 #paragraph2 {
-    font-size: 140%;
-    border: 1px solid black;
     padding: 3%;
+    font-size: 1.5em;
+    font-style: italic;
 }
 #lista-e-imagen {
-    columns: 2;
+    padding: 2%;
+    width: 90%;
+    margin: 1% auto 5%;
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 40px 40px 0px rgb(46,76,76);
+    font-size: 1.1em;
+    background-color: var(--color-seccion);
+
 }
 #lista {
+    display: flex;
+    flex-direction: column;
+    
+}
+#lista li{
     padding: 5%;
 }
-
-#lista li {
-    padding: 5%;
+li::marker {
+    font-size: 25px;
 }
-#paragraph3 {
-    font-size: 150%;
-    padding: 1% 1% 3% 3%;
+#paragraph3, #paragraph4 {
+    padding: 0.5% 3%;
     text-align: center;
     line-height: 130%;
-}
-#paragraph4 {
-    font-size: 150%;
-    padding: 1% 1% 3% 3%;
-    text-align: center;
-    line-height: 130%;
+    font-size: 1.5em;
 }
 #imagen-confianza {
     text-align: center;
+}
+#imagen-confianza img{
+    width: 40%;
+    height: auto;
 }
 
 /* ------------------------------------------------------------------------------------------------ */
@@ -80,46 +103,64 @@ body{
     align-items: center;
     gap: 10vh;
 }
+.comentSection{
+    background-color: rgb(238,243,244);
+}
+
+/* ------------------------------------------------------------------------------------------------ */
 
 /* FORMULARIOS */
-.contactForm, .comentForm{
+.formulario{
     display: flex;
     flex-direction: column;
     gap: 5vh;
     width: 60%;
     background-color: var(--color-seccion);
-    padding: 5vh 2vw
+    padding: 5vh 2vw;
+    border-radius: 10px;
 }
-.contactForm .inputContainer, .comentForm .inputContainer{
+.formulario .inputContainer{
     display: flex;
     flex-direction: column;
-    font-size: 18px;
+    font-size: 0.9em;
 }
-.contactForm .inputContainer input, .comentForm .inputContainer input{
+.formulario .inputContainer input{
     padding: 10px;
+    margin-top: 5px;
+    background-color: rgb(245,248,250);
     border: none;
-    border-bottom: 1px solid black;
-    background-color: var(--color-seccion);
+    border-radius: 15px;
+}
+.comentArea{
+    padding: 10px;
+    margin-top: 5px;
+    height: 20vh;
+    background-color: rgb(245,248,250);
+    border: none;
+    border-radius: 20px 0 20px 20px;
+}
+.formulario .inputContainer input:focus, .comentArea:focus{
+    outline: none;
+    border-style: solid;
+    border-color: rgba(163,121,137,0.8);
 }
 .submitBtn{
     padding: 10px;
     width: 200px;
-    background-color: black;
+    background-color: rgb(46,76,76);
     color: white;
-    border: 1px black solid;
-    border-radius: 5px;
+    border: none;
+    border-radius: 20px 0 20px 20px;
 }
 .submitBtn:hover{
     transition: 1s ease-in-out;
-    background-color: rgb(107, 195, 107);
-    color: black;
-    border: 1px black solid;
+    background-color: #9EA7B1;
+    color: var(--color-fuente);
     font-weight: bold; 
 }
-.coment{
-    height: 20vh;
-    background-color: var(--color-seccion);
-}
+
+
+/* ------------------------------------------------------------------------------------------------ */
 
 /* CLASES REGULARES */
 
@@ -129,90 +170,54 @@ body{
     align-items: center;
     text-align: center;
     gap: 25px;
-    background-color: rgb(217, 241, 233);
+    background-color: rgb(192, 222, 223);
     padding-top: 20px;
     padding-bottom: 20px;
-
 }
 .clases-regulares h2{
     display: flex;
     flex-direction: column;
     font-weight: normal;
     width: 100%;
-    background-color: rgb(192, 222, 223);
     
+    font-size: 1.5em;
+}
+.clases-regulares h2 span{
+    font-weight: bold;
 }
 .clases-regulares ul{
+    width: 40%;
+    height: 20%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     text-align: left;
-    justify-content: center;
-    width: 50%;
-    height: 200px;
+    gap: 15px;
     background-color: rgb(221, 212, 202);
-    gap: 10px;
-    padding: 30px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
+    padding: 2% 5%;
 }
 .btntoform{
+    width: 300px;
+    height: 150%;
+    padding: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 50vh;
+    justify-content: center;
+    background-color:rgb(163,121,137);
+    border: none;
+    border-radius: 50px 0px 50px 50px;
+    color: white;
     font-weight: bold;
-    font-size: x-large;
+    font-size: 1.1em;
+    text-transform: uppercase;
 }
-.negrita-titulo{
-    font-weight: bold;
-}
-.clases-regulares a{
-    text-decoration: none;
-    color: rgb(31, 30, 30);
-}
-.al-100{
-    font-size: 40px;
-    display: flex;
-    flex-direction: column;
-}
-
-/* ------------------------------------------------------------------------------------------------ */
-
-/* FOOTER */
-
-footer{
-    width: 100%;
-    padding: 20px;
-    display: flex;
-    font-style: italic;
-    background-color: rgb(102,102,102);
-    color: rgb(236, 224, 224);
-    flex-direction: column;
-    align-items: center;    
-    text-align: center;
-    gap: 20px;
-}
-footer p{
-    display: flex;
-    flex-direction: column;
-}
-.footer-contacto{
-    display: flex;
-    flex-direction: row;
-    gap: 25px;
-    
+.btntoform:hover{
+    cursor: pointer;
     
 }
-
-footer a{
-    text-decoration: none;
-    color: rgb(15, 14, 14);
-}
-
-footer button{
-    background-color: azure;
-    border-radius: 8px;
-    width: 200px;
-    height: 40px;
+.btntoform span{
+    font-size: 1.3em;
 }
 
 /* ------------------------------------------------------------------------------------------------ */
@@ -228,8 +233,8 @@ footer button{
     margin: 2vh;
 }
     .cardImg{
-        width: 10vw;
-        height: 20vh;
+        width: 15%;
+        height:  15%;
         flex: 0 0 auto;
         margin-right: 20px;
         border-radius: 50%;
@@ -241,8 +246,10 @@ footer button{
         gap: 10px 0px;
         padding: 20px;
         width: 40vw;
-        border: 1px black solid;
-        border-radius: 5px;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
+        background-color: #fff;
     }
 .comentContainer{
     display: flex;
@@ -253,19 +260,16 @@ footer button{
 
 /* PREGUNTAS-FRECUENTES */
 .container-preguntas{
-    width: 58%;
-    margin: 200px auto 30px;
-
+    width: 60%;
+    margin: 50px auto;
 }
-.container-preguntas h3{
+.container-preguntas h2{
     text-align: center;
-    font-size: 2rem;
     margin-top: 30px;
     margin-bottom: 50px;
 }
 .preguntas-frecuentes{
     box-shadow: 1px 1px 1px  rgb(197, 196, 196);
-
 }
 .pregunta-frecuente{
     display: flex;
@@ -279,10 +283,9 @@ footer button{
     align-items: center;
     opacity: 0.3;
 }
-
 .pregunta-frecuente p{
     padding-top: 20px;
-    font-size: 1.2rem;
+    font-size: 1em;
 }
 .simb-der{
     width: 10%;
@@ -305,7 +308,7 @@ footer button{
 .respuesta-frecuente{
     height: 0;
     padding: 0 20px 2px 75px;
-    font-size: 1rem;
+    font-size: 1em;
     overflow: hidden;
     transition: 0.5s;
     position: relative;
@@ -320,6 +323,7 @@ footer button{
     flex-direction: column;
     align-items: center;
     gap: 10vh;
+    background-color:rgb(249,249,249);
 }
 .productContainer{
     width: 100%;
@@ -327,18 +331,18 @@ footer button{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
 }
 .productCard{
     width: 40%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: rgb(154, 222, 167);
+    background-color:var(--color-seccion);
     padding: 10px;
-    border-radius: 5px;
     gap: 2vw;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    font-size: 0.9em;   
 }
 .productCard img{
     width: 165px;
@@ -351,3 +355,37 @@ footer button{
     flex-direction: column;
     gap: 5px;
 }
+
+/* ------------------------------------------------------------------------------------------------ */
+
+/* FOOTER */
+
+footer{
+    width: 100%;
+    padding: 20px;
+    background-color: rgb(163,121,137);
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    text-align: center;
+    gap: 20px;
+    font-size: 0.9em;
+    font-style: italic;
+    color: rgb(251,237,232);
+}
+footer p{
+    display: flex;
+    flex-direction: column;
+}
+.footer-contacto{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    font-size: 0.9em;
+}
+footer a{
+    text-decoration: none;
+    color: rgb(251,237,232);
+}
+
+/* ------------------------------------------------------------------------------------------------ */
