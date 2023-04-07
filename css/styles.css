@@ -64,7 +64,6 @@ h2{
     font-size: 1.1em;
     background-color: var(--color-seccion);
     box-shadow: 40px 40px 0px rgb(46,76,76);
-
 }
 #lista li{
     width: 60%;
@@ -328,6 +327,79 @@ li::marker {
     overflow: hidden;
     transition: 0.5s;
     position: relative;
+}
+
+/* --------------------------------------------------------------------------- */
+
+/* SECCION FINAL */
+
+#seccion-final {
+    background-color: rgb(117, 98, 108);
+}
+
+.container-final {
+    width: 58%;
+    margin: 10px auto;
+    background-color: rgb(247, 230, 232);
+    border: solid 12px rgb(219, 125, 141);
+
+
+}
+
+.titulo-final {
+    height: 20vh;
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 15px;
+    color: rgb(141, 134, 134);
+    box-shadow: 5px 5px 5px;
+}
+
+.container-planes {
+    width: 75%;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    text-align: start;
+    padding-left: 25px;
+}
+
+.container-planes li {
+    margin-top: 55px;
+    margin-bottom: 25px;
+    font-size: 1.3rem;
+}
+
+.container-planes p {
+    padding-left: 25px;
+    font-size: 1.3rem;
+}
+
+.container-mensaje {
+    border-bottom: solid 1px rgb(88, 67, 82);
+    /* border-top: solid 3px rgb(230, 220, 233); */
+    box-shadow: 5px 5px 5px 5px;
+    margin: 100px 2px 0 auto;
+    font-size: 1.6rem;
+    height: 20vh;
+    color: rgb(99, 96, 96);
+    text-align: center;
+    padding: 10px 0;
+}
+
+.enlacePregunta {
+    width: 450px;
+    height: 110px;
+    font-size: 1.6rem;
+    margin: 80px auto 80px auto;
+    text-align: center;
+    background-color: rgb(211, 146, 156);
+    padding-top: 15px;
+    border-radius: 30px 0 30px 30px;
+}
+
+.enlacePregunta a {
+    text-decoration: none;
+    color: white;
 }
 
 /* ------------------------------------------------------------------------------------------------ */
