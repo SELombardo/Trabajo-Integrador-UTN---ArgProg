@@ -20,6 +20,8 @@ function animate() {
 
 window.addEventListener('scroll', animate);
 
+/* ------------------------------------------------------------------------------------------------ */
+
 /* SCRIPT COMENTARIOS */
 
 const comentArr = []
@@ -32,7 +34,7 @@ const renderComent = () =>{
     for(const opinion of comentArr){
         cardContainer.innerHTML += `
         <div class="cardOpinion">
-            <img class="cardImg" src="../img/useranonimous.png">
+            <img class="cardImg" src="./img/useranonimous.png">
             <div>
                 <h3>${opinion.nombre}:</h3>
                 <p>"${opinion.coment}"</p>

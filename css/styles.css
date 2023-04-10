@@ -4,6 +4,7 @@
     --color-fondo: white;
     --color-seccion: rgb(221, 212, 202);
     --color-fuente: #2e4c4c;
+    scroll-behavior: smooth;
 }
 *{
     margin: 0;
@@ -62,37 +63,43 @@ h2{
     justify-content: center;
     align-items: center;
     font-size: 1.1em;
-    background-color: var(--color-seccion);
+    background-color: rgb(252,239,234);
     box-shadow: 40px 40px 0px rgb(46,76,76);
 
 }
 #lista li{
-    width: 60%;
+    width: 70%;
     padding: 10px;
     margin: 0px auto;
     font-size: 1.1em;
+    line-height: 2.0;
 }
 li::marker {
     font-size: 1.5em;
 }
-#paragraph3, #paragraph4 {
-    padding: 0.5% 3%;
-    text-align: center;
-    line-height: 130%;
+#parrafo-e-imagen{
+    padding: 3% 0% 7% 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+}
+#paragraph3{
+    width: 40%;
+    text-align: justify;
+    line-height: 150%;
     font-size: 1.5em;
 }
 #imagen-confianza {
-    text-align: center;
-}
-#imagen-confianza img{
-    width: 40%;
+    width: 30%;
     height: auto;
+    box-shadow: 40px 40px 0px rgb(201,221,212);
 }
 
 /* ------------------------------------------------------------------------------------------------ */
 
 /* SECCIONES */
-.contactSection, .comentSection, .sectionAboutus{
+.contactSection, .comentSection, .sectionAboutus, .finalSection{
     padding: 5vh 10vw;
     display: flex;
     flex-direction: column;
@@ -134,6 +141,7 @@ li::marker {
     background-color: rgb(245,248,250);
     border: none;
     border-radius: 20px 0 20px 20px;
+    resize: vertical;
 }
 .formulario .inputContainer input:focus, .comentArea:focus{
     outline: none;
@@ -155,7 +163,6 @@ li::marker {
     font-weight: bold; 
 }
 
-
 /* ------------------------------------------------------------------------------------------------ */
 
 /* CLASES REGULARES */
@@ -174,11 +181,7 @@ li::marker {
     flex-direction: column;
     font-weight: normal;
     width: 100%;
-    
     font-size: 1.5em;
-}
-.clases-regulares h2 span{
-    font-weight: bold;
 }
 .clases-regulares ul{
     width: 40%;
@@ -188,31 +191,39 @@ li::marker {
     text-align: left;
     gap: 15px;
     background-color: rgb(221, 212, 202);
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 20px 20px 0px rgb(46,76,76);
     padding: 2% 5%;
 }
+
+/* ------------------------------------------------------------------------------------------------ */
+
+/* BOTÓN AL FORMULARIO */
 .btntoform{
     width: 300px;
     height: 150%;
+    margin: 0 auto;
     padding: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color:rgb(163,121,137);
-    border: none;
+    border: rgb(163,121,137) solid 3px;
     border-radius: 50px 0px 50px 50px;
     color: white;
     font-weight: bold;
     font-size: 1.1em;
     text-transform: uppercase;
+    background-image: linear-gradient(to bottom left, white 50%, rgb(163, 121, 137) 50%);
+    background-size: 200% 200%;
+    background-position: bottom left;
+    transition: background-color 1s ease-in, color 0.5s ease-in;
 }
-.btntoform:hover{
+.btntoform:hover {
     cursor: pointer;
-    
-}
-.btntoform span{
-    font-size: 1.3em;
+    background-position: top right;
+    transition: background-position 1s ease-out, color 0.5s ease-out;
+    color: rgb(163, 121, 137);
 }
 
 /* ------------------------------------------------------------------------------------------------ */
@@ -237,7 +248,7 @@ li::marker {
 }
 
 /* ------------------------------------------------------------------------------------------------ */
- 
+
 /* TARJETAS DE OPINION */
 .opiniones{
     display: flex;
@@ -284,13 +295,24 @@ li::marker {
     margin-top: 30px;
     margin-bottom: 50px;
 }
+.container-preguntas > p:first-of-type, .container-preguntas > p:last-of-type{
+    width: 100%;
+    text-align: center;
+    line-height: 150%;
+    font-size: 1.2em;
+}
+.container-preguntas > p:last-of-type{
+    padding: 5% 0%;
+}
 .preguntas-frecuentes{
     box-shadow: 1px 1px 1px  rgb(197, 196, 196);
+    
 }
 .pregunta-frecuente{
     display: flex;
     justify-content: space-between;
     height: 100px;
+    text-align: left;
 }
 .simb-izq{
     font-size: 75px;
@@ -304,7 +326,7 @@ li::marker {
     font-size: 1em;
 }
 .simb-der{
-    width: 10%;
+    width: 30px;
     height: 100%;
     font-size: 30px;
     display: flex;
@@ -328,6 +350,33 @@ li::marker {
     overflow: hidden;
     transition: 0.5s;
     position: relative;
+    text-align: justify;
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+
+/* SECCIÓN FINAL */
+.container-final{
+    display: flex;
+    gap: 5vw;
+    align-items: flex-start;
+}
+.container-final h2{
+    display: flex;
+    flex-basis: 50%;
+    text-align: justify;
+    /* padding: 5%; */
+    font-size: 2.5em;
+}
+.container-planes{
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
+.valorClases{
+    padding-left: 25px;
+    list-style-type: none;
 }
 
 /* ------------------------------------------------------------------------------------------------ */
@@ -340,6 +389,12 @@ li::marker {
     align-items: center;
     gap: 10vh;
     background-color:rgb(249,249,249);
+}
+.productSection > p{
+    width: 90%;
+    text-align: center;
+    line-height: 150%;
+    font-size: 1.2em;
 }
 .productContainer{
     width: 100%;
@@ -356,7 +411,7 @@ li::marker {
     justify-content: space-between;
     flex-wrap: wrap;
     background-color:white;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 20px 20px 0px rgb(46,76,76);
     font-size: 0.9em;   
 }
 .productCard img{
