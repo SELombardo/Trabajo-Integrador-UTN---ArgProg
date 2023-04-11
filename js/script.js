@@ -69,7 +69,7 @@ for (let i = 0; i < botonDer.length; i = i + 1) {
 
     botonDer[i].addEventListener('click', () => {
         if ( conttador == 0 ) {
-            respuesta[i].style.height = `${altoparrafo}px`;
+            respuesta[i].style.height = `100px`;
             pregunta[i].style.marginBottom = '22px';
             botonDer[i].innerHTML = '<i>-</i>';
             conttador = conttador + 1
