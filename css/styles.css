@@ -322,8 +322,9 @@ li::marker {
     opacity: 0.3;
 }
 .pregunta-frecuente p{
-    padding-top: 20px;
+    padding-top: 40px;
     font-size: 1em;
+    width: 80%;
 }
 .simb-der{
     width: 30px;
@@ -345,13 +346,14 @@ li::marker {
 }
 .respuesta-frecuente{
     height: 0;
-    padding: 0 20px 2px 75px;
+    padding: 0 20px 4px 75px;
     font-size: 1em;
     overflow: hidden;
     transition: 0.5s;
     position: relative;
     text-align: justify;
 }
+
 
 /* ------------------------------------------------------------------------------------------------ */
 
