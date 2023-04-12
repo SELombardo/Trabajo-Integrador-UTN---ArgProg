@@ -12,18 +12,35 @@
 
 <body>
     <!-- HEADER -->
-    <header>
+    <header class="topheader">
         <!-- NAV -->
-        <nav></nav>
+        <nav class="topnav">
+            <a href="#" class="logo">
+                <img src="./img/logo.jpg" alt="Logo BrandName Acroyoga">
+            </a>
+            <ul class="menu">
+                <li><a href="#sectionAbove">Inicio</a></li>
+                <li><a href="#clases-regulares">Clases Regulares</a></li>
+                <li><a href="#sectionAboutus">Sobre Nosotres</a></li>
+                <li><a href="#comentSection">Comunidad</a></li>
+                <li><a href="#container-preguntas">FAQ</a></li>
+                <li><a href="#contactSection">Contacto</a></li>
+                <li><a href="#productSection">Tienda</a></li>
+            </ul>
+            <div class="searchBox">
+                <input type="search " placeholder="Buscar...">
+                <i class="bi bi-search"></i>
+            </div>
+        </nav>
     </header>
+
     <!-- MAIN -->
     <main>
         <div id="hero">
-            <p class="slide-in-from-right" id="hero-paragraph">"Sé consciente de tu cuerpo, afianzá tu fuerza y lográ
-                más flexibilidad junto a otres, gracias al acroyoga"</p>
+            <p class="slide-in-from-right" id="hero-paragraph">"Sé consciente de tu cuerpo, afianzá tu fuerza y lográ más flexibilidad junto a otres, gracias al acroyoga"</p>
         </div>
         <!-- ABOVE THE FOLD -->
-        <section class="sectionAbove">
+        <section class="sectionAbove" id="sectionAbove">
             <p id="paragraph2">Experimentá la sabiduría del yoga, el dinamismo de la acrobacia y la relajación profunda
                 del masaje tailandés, en un entorno cuidado, de escucha y confianza
             <p>
@@ -45,7 +62,7 @@
             </div>
         </section>
         <!-- SECCIÓN CLASES REGULARES -->
-        <section class="clases-regulares">
+        <section class="clases-regulares" id="clases-regulares">
             <h2>Comenzá tu día con las <strong>energías recargadas al 100 %</strong> luego de una clase de acroyoga</h2>
             <ul>
                 <li>Desarrollá tus habilidades en todos los aspectos de la práctica,
@@ -61,7 +78,7 @@
             </button>
         </section>
         <!-- SECCION ABOUT US -->
-        <section class="sectionAboutus">
+        <section class="sectionAboutus" id="sectionAboutus">
             <div>
                 <div class="paragraphs">
                     <h2>Transformá tu consciencia incorporando nuevas herramientas para habitar el mundo</h2>
@@ -77,7 +94,7 @@
             </button>
         </section>
         <!-- SECCION COMENTARIOS -->
-        <section class="comentSection">
+        <section class="comentSection" id="comentSection">
             <h2>La familia Acroyogui anda diciendo...</h2>
             <div class="opiniones">
                 <!-- CONTENEDOR DE OPINIONES -->
@@ -118,7 +135,7 @@
             </form>
         </section>
         <!-- PREGUNTAS-FRECUENTES -->
-        <section class="container-preguntas">
+        <section class="container-preguntas" id="container-preguntas">
             <h2>¿Te gustaría saber algo más antes de empezar a volar con nosotres?</h2>
             <p>Estas son <strong>algunas de las preguntas que más nos hacen</strong> antes de iniciar nuestras clases:</p>
             <div class="preguntas-frecuentes">
@@ -173,7 +190,7 @@
             <button class="btntoform" onclick="location.href='#contactSection'"> Quiero sumarme a las clases de acroyoga </button>
         </section> 
         <!-- SECCIÓN FINAL -->
-        <section class="finalSection">
+        <section class="finalSection" id="finalSection">
             <div class="container-final">
                 <h2>¿Querés desarrollar tu consciencia corporal, tu flexibilidad y tu fuerza junto a otres en una clase
                     de acroyoga?</h2>
@@ -224,7 +241,7 @@
             </form>
         </section>
         <!-- SECCION PRODUCTOS -->
-        <section class="productSection">
+        <section class="productSection" id="productSection">
             <h2>Potenciá tu práctica de yoga y acroyoga</h2>
             <p>Descubrí nuestra <strong>selección de productos para acroyoga</strong> diseñados para mejorar tu práctica y hacerte sentir bien. Nuestra gama de productos está <strong>cuidadosamente seleccionada para ayudarte a encontrar el equilibrio y la armonía que necesitas.</strong> Explora nuestra selección y mejora tu experiencia de yoga hoy mismo.</p>
             <div class="productContainer"></div>
