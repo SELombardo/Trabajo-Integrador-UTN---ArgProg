@@ -19,7 +19,7 @@ body{
     color: var(--color-fuente);
 }
 h2{
-    font-size: 1.8em; 
+    font-size: 1.8em;
 }
 
 /* ------------------------------------------------------------------------------------------------ */
@@ -111,6 +111,7 @@ section[id] {
         color: #2c4c4c;
         text-align: center;
         padding: 5% 5% 5% 5%;
+        text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.5);
     } 
 #paragraph2 {
     width: 90%;
@@ -118,6 +119,7 @@ section[id] {
     padding: 3% 0;
     font-size: 1.5em;
     font-style: italic;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
 }
 #lista-e-imagen {
     padding: 2%;
@@ -138,7 +140,6 @@ section[id] {
     margin: 0px auto;
     font-size: 1.4em;
     line-height: 1.5;
-    text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.2);
 }
 li::marker {
     font-size: 1.5em;
@@ -152,25 +153,26 @@ li::marker {
 #imagenes img {
     width: 12vw;
     height: auto;
-    box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.2);
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.2);
 }
 #parrafo-e-imagen{
+    margin: 0 auto;
+    width: 80%;
     padding: 3% 0% 7% 0%;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5vw;
 }
 #imagen-confianza {
-    width: 30%;
     height: auto;
     box-shadow: 40px 40px 0px rgb(201,221,212);
 }
-#paragraph3{
-    width: 40%;
+#paragraph{
+    width: 80%;
     text-align: justify;
     line-height: 150%;
     font-size: 1.5em;
+    margin: 5% 0;
 }
 #imagen-confianza {
     width: 30%;
@@ -447,23 +449,29 @@ li::marker {
 .container-final{
     display: flex;
     gap: 5vw;
-    align-items: flex-start;
+    align-items: center;
+    background: linear-gradient(to right, rgb(238,243,244) 50%, rgb(201,221,212) 50%);
+    padding: 3% 5%;
 }
-.container-final h2{
-    display: flex;
-    flex-basis: 50%;
-    text-align: justify;
-    /* padding: 5%; */
-    font-size: 2.5em;
-}
-.container-planes{
-    flex-basis: 40%;
+.container-titulo{
     display: flex;
     flex-direction: column;
-    gap: 5vh;
+    flex-basis: 40%;
+    text-align: center;
+    gap: 3vh;
+}
+.container-planes{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 60%;
+    list-style-position: inside;
+    background-color: white;
+    box-shadow: 20px 20px 0px rgb(46,76,76);
+    text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.2);
+    padding: 5%;
 }
 .valorClases{
-    padding-left: 25px;
+    padding-left: 50px;
     list-style-type: none;
 }
 
