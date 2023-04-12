@@ -51,7 +51,9 @@ h2{
         padding: 5% 5% 5% 5%;
     } 
 #paragraph2 {
-    padding: 3%;
+    width: 90%;
+    margin: 0 auto;
+    padding: 3% 0;
     font-size: 1.5em;
     font-style: italic;
 }
@@ -287,7 +289,7 @@ li::marker {
 
 /* PREGUNTAS-FRECUENTES */
 .container-preguntas{
-    width: 60%;
+    width: 80%;
     margin: 50px auto;
 }
 .container-preguntas h2{
@@ -295,24 +297,28 @@ li::marker {
     margin-top: 30px;
     margin-bottom: 50px;
 }
-.container-preguntas > p:first-of-type, .container-preguntas > p:last-of-type{
+
+.container-preguntas > p:first-of-type{
     width: 100%;
-    text-align: center;
     line-height: 150%;
+    padding-bottom: 5%;
+    text-align: left;
     font-size: 1.2em;
 }
 .container-preguntas > p:last-of-type{
+    width: 100%;
+    line-height: 150%;
+    text-align: center;
     padding: 5% 0%;
+    font-size: 1.5em;
 }
 .preguntas-frecuentes{
     box-shadow: 1px 1px 1px  rgb(197, 196, 196);
-    
 }
 .pregunta-frecuente{
     display: flex;
     justify-content: space-between;
     height: 100px;
-    text-align: left;
 }
 .simb-izq{
     font-size: 75px;
@@ -322,8 +328,9 @@ li::marker {
     opacity: 0.3;
 }
 .pregunta-frecuente p{
-    padding-top: 20px;
+    padding-top: 40px;
     font-size: 1em;
+    width: 80%;
 }
 .simb-der{
     width: 30px;
@@ -345,7 +352,7 @@ li::marker {
 }
 .respuesta-frecuente{
     height: 0;
-    padding: 0 20px 2px 75px;
+    padding: 0 20px 4px 75px;
     font-size: 1em;
     overflow: hidden;
     transition: 0.5s;
@@ -402,7 +409,8 @@ li::marker {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
+    gap: 40px;
+    padding-bottom: 4%;
 }
 .productCard{
     width: 40%;
@@ -410,14 +418,20 @@ li::marker {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    background-color:white;
-    box-shadow: 20px 20px 0px rgb(46,76,76);
-    font-size: 0.9em;   
+    background-color: rgb(201,221,212);
+    font-size: 0.9em;
+    transition: all 0.25s;
+}
+.productCard:hover{
+    cursor: pointer;
+    transform: translateY(-15px);
+    box-shadow: 10px 10px 0px rgb(46,76,76);
 }
 .productCard img{
-    margin: auto 0px;
-    width: 40%;
-    height: auto;
+    margin: auto;
+    width:35%;
+    height:85%;
+    border-radius: 2px;
 }
 .productCard div{
     padding: 10px 0px 10px 10px;
@@ -425,7 +439,6 @@ li::marker {
     display: flex;
     flex-direction: column;
     gap: 5px;
-    background-color: rgb(201,221,212);
 }
 
 /* ------------------------------------------------------------------------------------------------ */
@@ -458,6 +471,10 @@ footer p{
 footer a{
     text-decoration: none;
     color: rgb(251,237,232);
+}
+footer a:hover {
+    transition: color 0.3s ease-in-out;
+    color: rgb(116, 49, 74);
 }
 
 /* ------------------------------------------------------------------------------------------------ */

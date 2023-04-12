@@ -112,4 +112,14 @@ fetch("./database.json")    //Solicita el archivo .json mediante la función fet
         }
     })
     
-    /* ------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------ */
+
+/* SCRIPT FORMULARIO CONTACTO */
+
+contactForm.addEventListener("submit", (event) =>{
+    event.preventDefault()                          //para que el btn submit no refresque la pág
+    contactForm.reset()                             //resetea los campos
+})
+
+
+/* ------------------------------------------------------------------------------------------------ */
