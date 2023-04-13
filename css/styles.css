@@ -571,28 +571,3 @@ footer a:hover {
 }
 
 /* ------------------------------------------------------------------------------------------------ */
-
-/* MEDIA QUERY */
-
-@media (max-width: 850px) {
-    .topheader {
-        width: 0;
-    }
-    .menu {
-        flex-direction: column;
-        position: fixed;
-        left: 0;
-        top: 0;
-        width: 100%;
-        align-items: center;
-        background-color: var(--color-lavender);
-        overflow: auto;
-        box-sizing: content-box;
-    }
-    .menu li {
-        padding: 0;
-    }
-    .menu a {
-        line-height: 40px;
-    }
-}
