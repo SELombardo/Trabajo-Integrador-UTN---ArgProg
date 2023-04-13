@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
 
 :root {
-    --color-fondo: white;
-    --color-seccion: rgb(221, 212, 202);
-    --color-fuente: #2e4c4c;
     scroll-behavior: smooth;
+    --color-beige: rgb(221, 212, 202);
+    --color-lavender: rgb(163, 121, 137);
+    --color-dark-green: rgb(46, 76, 76);
+    --color-font-nav-foot: rgb(251, 237, 232);
+    --color-input-field: rgb(245 ,248 ,250);
+    --color-misty-white: rgb(238, 243, 244);
+    --color-pale-green: rgb(201, 221, 212);
 }
 *{
     margin: 0;
@@ -14,9 +18,9 @@
     text-decoration: none;
 }
 body{
-    background-color: var(--color-fondo);
+    background-color: white;
     font-size: 16px;
-    color: var(--color-fuente);
+    color: var(--color-dark-green);
 }
 h2{
     font-size: 1.8em;
@@ -32,7 +36,7 @@ h2{
     top: 0;
     width: 100%;
     z-index: 10;
-    background-color: rgb(163,121,137);
+    background-color: var(--color-lavender);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -53,19 +57,19 @@ h2{
 .menu a {
     font-size:0.9em;
     font-weight: 500;
-    color: rgb(251,237,232); 
+    color: var(--color-font-nav-foot); 
 }
 .menu a:hover {
-    border-bottom: 2px solid rgb(251,237,232);
+    border-bottom: 2px solid var(--color-font-nav-foot);
     transition: border-width 0.2s ease-in-out;
 }
 .searchBox{
-    color: rgb(245,248,250);
+    color: var(--color-input-field);
 }
 .searchBox input{
     width: 10vw;
     height: 5vh;
-    background-color: rgb(245,248,250);
+    background-color: var(--color-input-field);
     border: none;
     border-radius: 15px;
 }
@@ -74,7 +78,7 @@ h2{
     width: 15vw;
     outline: none;
     border-style: solid;
-    border-color: rgb(245,248,250);
+    border-color: var(--color-input-field);
 }
 
 section[id] {
@@ -108,7 +112,7 @@ section[id] {
     #hero-paragraph {
         font-size: 2.2em;
         font-weight: 500;
-        color: #2c4c4c;
+        color: var(--color-dark-green);
         text-align: center;
         padding: 5% 5% 5% 5%;
         text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.5);
@@ -130,8 +134,8 @@ section[id] {
     align-items: center;
     font-size: 1.1em;
     font-weight: 500;
-    background-color: rgb(252,239,234);
-    box-shadow: 40px 40px 4px rgb(46,76,76);
+    background-color: var(--color-font-nav-foot);
+    box-shadow: 40px 40px 4px var(--color-dark-green);
 
 }
 #lista li{
@@ -165,7 +169,7 @@ li::marker {
 }
 #imagen-confianza {
     height: auto;
-    box-shadow: 40px 40px 0px rgb(201,221,212);
+    box-shadow: 40px 40px 0px var(--color-pale-green);
 }
 #paragraph{
     width: 80%;
@@ -177,7 +181,7 @@ li::marker {
 #imagen-confianza {
     width: 30%;
     height: auto;
-    box-shadow: 40px 40px 0px rgb(201,221,212);
+    box-shadow: 40px 40px 0px var(--color-pale-green);
 }
 
 /* ------------------------------------------------------------------------------------------------ */
@@ -191,7 +195,7 @@ li::marker {
     gap: 10vh;
 }
 .comentSection{
-    background-color: rgb(238,243,244);
+    background-color: var(--color-misty-white);
 }
 
 /* ------------------------------------------------------------------------------------------------ */
@@ -202,7 +206,7 @@ li::marker {
     flex-direction: column;
     gap: 5vh;
     width: 60%;
-    background-color: var(--color-seccion);
+    background-color: var(--color-beige);
     padding: 5vh 2vw;
     border-radius: 10px;
 }
@@ -214,7 +218,7 @@ li::marker {
 .formulario .inputContainer input{
     padding: 10px;
     margin-top: 5px;
-    background-color: rgb(245,248,250);
+    background-color: var(--color-input-field);
     border: none;
     border-radius: 15px;
 }
@@ -222,7 +226,7 @@ li::marker {
     padding: 10px;
     margin-top: 5px;
     height: 20vh;
-    background-color: rgb(245,248,250);
+    background-color: var(--color-input-field);
     border: none;
     border-radius: 20px 0 20px 20px;
     resize: vertical;
@@ -235,7 +239,7 @@ li::marker {
 .submitBtn{
     padding: 10px;
     width: 200px;
-    background-color: rgb(46,76,76);
+    background-color: var(--color-dark-green);
     color: white;
     border: none;
     border-radius: 20px 0 20px 20px;
@@ -243,7 +247,7 @@ li::marker {
 .submitBtn:hover{
     transition: 1s ease-in-out;
     background-color: #9EA7B1;
-    color: var(--color-fuente);
+    color: var(--color-dark-green);
     font-weight: bold; 
 }
 
@@ -256,7 +260,7 @@ li::marker {
     align-items: center;
     text-align: center;
     gap: 25px;
-    background-color: rgb(201,211,221);
+    background-color: var(--color-misty-white);
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -274,8 +278,8 @@ li::marker {
     flex-direction: column;
     text-align: left;
     gap: 15px;
-    background-color: rgb(221, 212, 202);
-    box-shadow: 20px 20px 0px rgb(46,76,76);
+    background-color: var(--color-beige);
+    box-shadow: 20px 20px 0px var(--color-dark-green);
     padding: 2% 5%;
 }
 
@@ -291,14 +295,14 @@ li::marker {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color:rgb(163,121,137);
-    border: rgb(163,121,137) solid 3px;
+    background-color:var(--color-lavender);
+    border: var(--color-lavender) solid 3px;
     border-radius: 50px 0px 50px 50px;
     color: white;
     font-weight: bold;
     font-size: 1.1em;
     text-transform: uppercase;
-    background-image: linear-gradient(to bottom left, white 50%, rgb(163, 121, 137) 50%);
+    background-image: linear-gradient(to bottom left, white 50%, var(--color-lavender) 50%);
     background-size: 200% 200%;
     background-position: bottom left;
     transition: background-color 1s ease-in, color 0.5s ease-in;
@@ -307,7 +311,7 @@ li::marker {
     cursor: pointer;
     background-position: top right;
     transition: background-position 1s ease-out, color 0.5s ease-out;
-    color: rgb(163, 121, 137);
+    color: var(--color-lavender);
 }
 
 /* ------------------------------------------------------------------------------------------------ */
@@ -328,7 +332,7 @@ li::marker {
     font-size: 1.2em;
 }
 .sectionAboutus img{
-    box-shadow: 40px 40px 0px rgb(201,221,212);
+    box-shadow: 40px 40px 0px var(--color-pale-green);
 }
 
 /* ------------------------------------------------------------------------------------------------ */
@@ -423,14 +427,14 @@ li::marker {
     align-items: center;
     opacity: 0.6;
     transition: 0.5s;
-    box-shadow: 0 0 12px -1px rgb(32, 31, 31);
+    box-shadow: 0 0 12px -1px var(--color-dark-green);
     background-color: black;
     color: white;
 }
 .simb-der:hover{
     cursor: pointer;
     color: white;
-    background-color: rgb(182, 177, 177);
+    background-color: var(--color-pale-green);
 }
 .respuesta-frecuente{
     height: 0;
@@ -450,7 +454,7 @@ li::marker {
     display: flex;
     gap: 5vw;
     align-items: center;
-    background: linear-gradient(to right, rgb(238,243,244) 50%, rgb(201,221,212) 50%);
+    background: linear-gradient(to right, var(--color-misty-white) 50%, var(--color-pale-green) 50%);
     padding: 3% 5%;
 }
 .container-titulo{
@@ -466,7 +470,7 @@ li::marker {
     flex-basis: 60%;
     list-style-position: inside;
     background-color: white;
-    box-shadow: 20px 20px 0px rgb(46,76,76);
+    box-shadow: 20px 20px 0px var(--color-dark-green);
     text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.2);
     padding: 5%;
 }
@@ -484,7 +488,7 @@ li::marker {
     flex-direction: column;
     align-items: center;
     gap: 10vh;
-    background-color:rgb(249,249,249);
+    background-color:var(--color-misty-white);
 }
 .productSection > p{
     width: 90%;
@@ -507,14 +511,14 @@ li::marker {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    background-color: rgb(201,221,212);
+    background-color: var(--color-pale-green);
     font-size: 0.9em;
     transition: all 0.25s;
 }
 .productCard:hover{
     cursor: pointer;
     transform: translateY(-15px);
-    box-shadow: 10px 10px 0px rgb(46,76,76);
+    box-shadow: 10px 10px 0px var(--color-dark-green);
 }
 .productCard img{
     margin: auto;
@@ -544,8 +548,8 @@ footer{
     gap: 20px;
     font-size: 0.9em;
     font-style: italic;
-    background-color: rgb(163,121,137);
-    color: rgb(251,237,232);
+    background-color: var(--color-lavender);
+    color: var(--color-font-nav-foot);
 }
 footer p{
     display: flex;
@@ -559,11 +563,11 @@ footer p{
 }
 footer a{
     text-decoration: none;
-    color: rgb(251,237,232);
+    color: var(--color-font-nav-foot);
 }
 footer a:hover {
     transition: color 0.3s ease-in-out;
-    color: rgb(116, 49, 74);
+    color: var(--color-dark-green);
 }
 
 /* ------------------------------------------------------------------------------------------------ */
@@ -581,7 +585,7 @@ footer a:hover {
         top: 0;
         width: 100%;
         align-items: center;
-        background-color: rgb(163,121,137);
+        background-color: var(--color-lavender);
         overflow: auto;
         box-sizing: content-box;
     }
